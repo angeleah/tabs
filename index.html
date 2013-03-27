@@ -1,0 +1,78 @@
+<html>
+<head>
+  <title>thingy</title>
+  <style type="text/css">
+    #tabs {
+      list-style-type: none;
+      list-style-position: inside;
+      padding: 0;
+      margin: 0;
+      overflow: hidden;
+      width: 198px;
+    }
+
+    #tabs li {
+      float: left;
+      border: solid 1px;
+      width: 64px;
+      border-bottom: none;
+      text-align: center;
+    }
+
+    #tabs li a {
+      display: inline-block;
+      border-bottom: solid 1px;
+      width: 100%;
+      height: 35px;
+      padding: 0;
+    }
+
+    #tabs .selected {
+      border-bottom: none;
+    }
+
+    .panes {
+      position: relative;
+      width: 198px;
+      height: 198px;
+      border: solid 1px;
+      border-top: none;
+    }
+
+    .panes div {
+      position: absolute;
+      float: left;
+      width: 100%;
+      height: 100%;
+      display: none;
+    }
+
+    .panes .current {
+      display: block;
+    }
+
+  </style>
+</head>
+<body>
+<ul id="tabs">
+  <li><a href="#pane-1">tab 1</a></li>
+  <li><a href="#pane-2">tab 2</a></li>
+  <li><a href="#pane-3">tab 3</a></li>
+</ul>
+<div class="panes">
+  <div id="pane-1">
+    Tab One
+  </div>
+
+  <div id="pane-2">
+    Tab Two
+  </div>
+
+  <div id="pane-3">
+    Tab Three
+  </div>
+</div>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="my.js"></script>
+</body>
+</html>
