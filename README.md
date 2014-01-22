@@ -1,6 +1,6 @@
 Tabs
 ====
-This is a little toy exercise in creating a tab navigation.
+This is an exercise in creating a tab navigation using javascript.
 
 GETTING STARTED
 ---------------
